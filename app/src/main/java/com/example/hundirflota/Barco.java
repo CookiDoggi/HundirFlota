@@ -4,11 +4,12 @@ public class Barco {
     private int size;
     private OrientacionEnum orientacionActual;
 
-    public Barco(int size){
-        this.size=size;
+    public Barco(int size) {
+        this.size = size;
     }
 
-    enum OrientacionEnum{
+    enum OrientacionEnum {
         norte, sur, este, oeste;
     }
 }
+

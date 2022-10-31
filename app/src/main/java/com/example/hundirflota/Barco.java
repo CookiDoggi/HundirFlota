@@ -2,13 +2,13 @@ package com.example.hundirflota;
 
 public class Barco {
     private int size;
-    private orientacion orientacionActual;
+    private OrientacionEnum orientacionActual;
 
     public Barco(int size){
         this.size=size;
     }
 
-    enum orientacion{
+    enum OrientacionEnum{
         norte, sur, este, oeste;
     }
 }

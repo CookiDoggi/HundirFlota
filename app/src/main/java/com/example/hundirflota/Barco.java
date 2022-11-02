@@ -13,6 +13,6 @@ public class Barco {
 
     enum OrientacionEnum {
         //norte, sur, este, oeste;
-        //vertical, horizontal;
+        vertical, horizontal;
     }
 }

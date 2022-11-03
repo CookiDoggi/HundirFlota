@@ -2,10 +2,19 @@ package com.example.hundirflota;
 
 public class Casilla {
 
-    private EstadoEnum estado = EstadoEnum.barco_hundido;
+    private int x,y;
+    private int valor;
+    private EstadoEnum estado;
+
+    public Casilla(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+        this.valor = 0;
+    }
 
     enum EstadoEnum{
-        barco_hit, barco_nohit, barco_hundido, agua, nohit;
+        agua, barco, barco_hit, barco_hundido, hit;
     }
 
 }

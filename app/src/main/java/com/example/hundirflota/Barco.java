@@ -1,18 +1,17 @@
 package com.example.hundirflota;
 
-public class Barco {
-    private int size;
+public class Barco extends Casilla{
+    private int longitud;
     private OrientacionEnum orientacionActual;
-    private Casilla casillaOrigen;
 
-    public Barco(int size, OrientacionEnum orientacionActual, Casilla casillaOrigen) {
-        this.size = size;
+    public Barco(int x, int y, int longitud, OrientacionEnum orientacionActual) {
+        super(x,y);
+        this.longitud = longitud;
         this.orientacionActual = orientacionActual;
-        this.casillaOrigen = casillaOrigen;
     }
 
     enum OrientacionEnum {
-        //norte, sur, este, oeste;
-        vertical, horizontal;
+        norte, sur, este, oeste;
+        //vertical, horizontal;
     }
 }

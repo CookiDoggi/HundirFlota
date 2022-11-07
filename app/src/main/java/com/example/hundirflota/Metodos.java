@@ -1,5 +1,5 @@
 package com.example.hundirflota;
-//xd
+
 public class Metodos {
     private static Casilla [][] tableroBombmas;
     private static Casilla [][] tableroUsuario;
